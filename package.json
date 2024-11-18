@@ -7,6 +7,12 @@
     "dev": "nodemon index.js",
     "prepare": "husky && husky install"
   },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "type": "module",
   "keywords": [],
   "author": "",
@@ -24,6 +30,7 @@
     "mongoose": "^8.7.1",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
+    "prettier": "^3.3.3",
     "pug": "^3.0.3",
     "redis": "^4.7.0",
     "speakeasy": "^2.0.0",
