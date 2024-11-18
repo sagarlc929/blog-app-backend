@@ -1,7 +1,4 @@
-
-const registerOtpValidation  = (req, res, next)=>{
-next();
-}
-export {
-  registerOtpValidation,
-}
+const registerOtpValidation = (req, res, next) => {
+  next();
+};
+export { registerOtpValidation };
