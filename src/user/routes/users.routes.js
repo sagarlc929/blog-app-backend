@@ -7,7 +7,7 @@ import {
   userLogout,
   userGenerateToken,
   userSaveUser,
-  userProfilePic,
+  // userProfilePic,
 } from "../controllers/users.controller.js";
 import {
   authenticateAccessToken,
@@ -18,7 +18,7 @@ import {
   loginValidator,
 } from "../middlewares/joiValidation.middleware.js";
 import { registerOtpValidation } from "../middlewares/otpValidation.middleware.js";
-import upload from "../../global/utils/multer.util.js";
+// import upload from "../../global/utils/multer.util.js";
 
 const usersRouter = express.Router();
 
