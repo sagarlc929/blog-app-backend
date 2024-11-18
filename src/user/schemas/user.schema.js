@@ -1,7 +1,7 @@
-import Joi from "joi";
+import Joi from 'joi';
 
 const today = new Date();
-const maxDate = new Date(today.toISOString().split("T")[0]);
+const maxDate = new Date(today.toISOString().split('T')[0]);
 const minDate = new Date(today);
 minDate.setFullYear(today.getFullYear() - 120);
 maxDate.setFullYear(today.getFullYear() - 18);
@@ -24,13 +24,13 @@ const userRegisterSchema = Joi.object({
   const { dateOfBirth, age } = value;
 
   if (!dateOfBirth && !age) {
-    return helpers.error("any.required", {
-      message: "Either dateOfBirth or age must be provided.",
+    return helpers.error('any.required', {
+      message: 'Either dateOfBirth or age must be provided.',
     });
   }
   if (dateOfBirth) {
     const dob = new Date(dateOfBirth);
-    const calculatedAge = today.getFullYear() - dob.getFullYear();
+    var calculatedAge = today.getFullYear() - dob.getFullYear();
     if (today < new Date(dob.setFullYear(dob.getFullYear() + calculatedAge))) {
       calculatedAge--;
     }

@@ -1,6 +1,6 @@
 // db.js
-import mongoose from "mongoose";
-import "dotenv/config";
+import mongoose from 'mongoose';
+import 'dotenv/config';
 
 const conn = async () => {
   try {

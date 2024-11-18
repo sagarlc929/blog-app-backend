@@ -7,8 +7,8 @@
     "dev": "nodemon index.js"
   },
   "lint-staged": {
-    "src/**/*.js": [
-     "eslint --fix",
+    "src/": [
+      "eslint --fix",
       "prettier --write"
     ]
   },
