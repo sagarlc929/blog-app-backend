@@ -66,9 +66,6 @@ Before you begin, make sure you have the following installed:
     # nodemailer otp email sender
     GMAIL_USER=your_gamil_user
     GMAIL_PASS=your_gamil_password  
-    # Redis Configuration
-    REDIS_HOST=localhost
-    REDIS_PORT=6379
    ```
 
 ### Running the Application
