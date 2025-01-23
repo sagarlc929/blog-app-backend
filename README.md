@@ -113,6 +113,5 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 - [Redis](https://redis.io/)
 - [Nodemailer](https://nodemailer.com/)
 - [Winston](https://github.com/winstonjs/winston)
-```
 
 [Back to top](#top)
