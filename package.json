@@ -1,5 +1,5 @@
 {
-  "name": "api-user-app",
+  "name": "api-blog-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
